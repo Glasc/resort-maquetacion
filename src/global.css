@@ -24,6 +24,17 @@ h4 {
   font-weight: 400;
 }
 
+.font-special {
+  font-family: "ITC Galliard Std";
+  font-weight: 500;
+}
+
+.font-section {
+  font-family: "Lato";
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+}
+
 .swiper {
   width: 100%;
   height: auto;
