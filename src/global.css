@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
