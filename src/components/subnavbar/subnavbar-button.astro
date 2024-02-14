@@ -1,0 +1,12 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button
+  class="flex items-center gap-x-1 font-medium pb-1 border-b-2 border-transparent hover:border-primary-200 hover:text-primary-300 transition-color duration-300"
+>
+  <span>
+    <slot />
+  </span>
+  <Icon class="inline-block" name="mdi:arrow-down-drop-circle-outline" />
+</button>
