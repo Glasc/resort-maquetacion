@@ -1,0 +1,116 @@
+---
+import Slide from "./slide.astro";
+import { Icon } from "astro-icon/components";
+import carousel1 from "../../assets/carousel/carousel-1.jpg";
+import carousel2 from "../../assets/carousel/carousel-2.jpg";
+import carousel3 from "../../assets/carousel/carousel-3.jpg";
+import carousel4 from "../../assets/carousel/carousel-4.jpg";
+import carousel5 from "../../assets/carousel/carousel-5.jpg";
+import { Image } from "astro:assets";
+---
+
+<section class="w-full py-12 pl-5 md:pl-0">
+  <div class="sm:pl-12 flex flex-col lg:flex-row gap-x-8 justify-between">
+    <div>
+      <h3
+        class="font-section text-primary-400 font-light uppercase text-4xl text-center"
+      >
+        The level <br /> of vacationing you deserve
+      </h3>
+      <button
+        class="hidden lg:flex uppercase text-primary-300 mx-auto text-xl gap-x-4 items-center mt-52"
+        ><Icon size={26} name="mdi:arrow-left-thin" />
+        <span>View properties</span>
+        <Icon size={26} name="mdi:arrow-right-thin" />
+      </button>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper mySwiper w-full mt-5 lg:mt-0">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper relative flex-nowrap">
+        <Slide>
+          <Image
+            loading="eager"
+            src={carousel1}
+            alt="vacation spot"
+            class="aspect-[16/13]"
+            format="avif"
+            width={700}
+          />
+        </Slide>
+        <Slide>
+          <Image
+            loading="eager"
+            src={carousel2}
+            alt="vacation spot"
+            class="aspect-[16/13]"
+            format="avif"
+            width={700}
+          />
+        </Slide>
+        <Slide>
+          <Image
+            loading="lazy"
+            src={carousel3}
+            alt="vacation spot"
+            class="aspect-[16/13]"
+            format="avif"
+            width={700}
+          />
+        </Slide>
+        <Slide>
+          <Image
+            loading="lazy"
+            src={carousel4}
+            alt="vacation spot"
+            class="aspect-[16/13]"
+            format="avif"
+            width={700}
+          />
+        </Slide>
+        <Slide>
+          <Image
+            loading="lazy"
+            src={carousel5}
+            alt="vacation spot"
+            class="aspect-[16/13]"
+            format="avif"
+            width={700}
+          />
+        </Slide>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="relative flex sm:hidden mt-10">
+      <div class="swiper-pagination"></div>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil numquam at odio
+    hic? Omnis error, tempora incidunt pariatur neque possimus cum quae odio. Harum
+    officiis nam voluptatum necessitatibus quisquam magni.
+  </div>
+</section>
+
+<script>
+  import Swiper from "swiper/bundle";
+  // import Swiper and modules styles
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+
+  // init Swiper:
+  new Swiper(".mySwiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    autoplay: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>

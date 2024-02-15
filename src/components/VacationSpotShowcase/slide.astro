@@ -1,0 +1,38 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div
+  class="swiper-slide min-w-[100%] sm:min-w-[31.25rem] sm:w-[31.25rem] sm:max-w-[31.25rem]"
+>
+  <slot />
+  <div
+    class="bg-white sm:border-2 sm:border-gray-100 shadow-sm p-4 lg:w-[90%] mx-auto lg:-mt-12 z-10 relative"
+  >
+    <div class="flex justify-center items-center gap-x-1">
+      <Icon class="text-primary-300" name="mdi:location" />
+      <h4
+        class="font-section font-light uppercase text-2xl text-primary-300 text-center"
+      >
+        Los cabos
+      </h4>
+    </div>
+    <p class="mt-1 px-5 mx-auto leading-snug">
+      Lorem ipsum dolor sit amet <span class="text-primary-400 font-semibold"
+        >consectetur, adipisicing elit</span
+      >. Laborum labore earum <span class="text-primary-400 font-semibold"
+        >officia pariatur nisi</span
+      > laudantium repellendus esse iste.
+    </p>
+    <a
+      href="#"
+      class="hidden sm:block uppercase mt-6 underline text-primary-300 font-semibold"
+      >Explore</a
+    >
+    <a
+      href="#"
+      class="sm:hidden inline-block  mx-auto mt-4 py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none bg-white rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 uppercase"
+      >Explore resort</a
+    >
+  </div>
+</div>
