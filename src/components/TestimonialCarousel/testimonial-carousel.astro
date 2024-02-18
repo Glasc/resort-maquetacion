@@ -1,0 +1,121 @@
+---
+import Slide from "./slide.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<section class="bg-gray-100 px-5 py-12">
+  <div class="w-full max-w-xl mx-auto">
+    <Icon
+      class="mx-auto text-gray-200"
+      title="placeholder logo"
+      size={80}
+      name="mdi:apps"
+    />
+    <h2 class="font-section text-center uppercase">
+      Garza Blanca blew me away
+    </h2>
+  </div>
+  <div class="swiper mySwiper3 w-full mt-5 lg:mt-0">
+    <div class="swiper-wrapper relative flex-nowrap">
+      <Slide>
+        <p class="text-center text-primary-400 mt-4 text-balance max-w-3xl w-full mx-auto">
+          Miguel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          excepturi ullam pariatur impedit, repellat quae ipsum earum.
+        </p>
+        <p
+          class="w-full mt-4 max-w-sm mx-auto font-medium text-balance text-center text-primary-400"
+        >
+          Timo Werner
+        </p>
+      </Slide>
+      <Slide>
+        <p class="text-center text-primary-400 mt-4 text-balance max-w-3xl w-full mx-auto">
+          Miguel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          excepturi ullam pariatur impedit, repellat quae ipsum earum.
+        </p>
+        <p
+          class="w-full mt-4 max-w-sm mx-auto font-medium text-balance text-center text-primary-400"
+        >
+          Guillermo Vicario
+        </p>
+      </Slide>
+      <Slide>
+        <p class="text-center text-primary-400 mt-4 text-balance max-w-3xl w-full mx-auto">
+          Miguel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          excepturi ullam pariatur impedit, repellat quae ipsum earum.
+        </p>
+        <p
+          class="w-full mt-4 max-w-sm mx-auto font-medium text-balance text-center text-primary-400"
+        >
+          James Maddison
+        </p>
+      </Slide>
+      <Slide>
+        <p class="text-center text-primary-400 mt-4 text-balance max-w-3xl w-full mx-auto">
+          Miguel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          excepturi ullam pariatur impedit, repellat quae ipsum earum.
+        </p>
+        <p
+          class="w-full mt-4 max-w-sm mx-auto font-medium text-balance text-center text-primary-400"
+        >
+          Richarlison
+        </p>
+      </Slide>
+      <Slide>
+        <p class="text-center text-primary-400 mt-4 text-balance max-w-3xl w-full mx-auto">
+          Miguel Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          excepturi ullam pariatur impedit, repellat quae ipsum earum.
+        </p>
+        <p
+          class="w-full mt-4 max-w-sm mx-auto font-medium text-balance text-center text-primary-400"
+        >
+          Micky van de Ven
+        </p>
+      </Slide>
+    </div>
+    <div class="mt-4">
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="w-full max-w-xl mx-auto uppercase">
+    <p class="text-center text-primary-400 font-medium mt-3">
+      A flavorful journey awaits for you
+    </p>
+    <div class="flex justify-center flex-wrap gap-3 mt-4">
+      <a
+        class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 hover:border-blue-600 duration-300 focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
+        >Cancun</a
+      >
+      <a
+        class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 hover:border-blue-600 duration-300  focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
+        >Puerto Vallarta</a
+      >
+      <a
+        class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 hover:border-blue-600 duration-300  focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
+        >Los cabos</a
+      >
+    </div>
+  </div>
+</section>
+
+<script>
+  import Swiper from "swiper/bundle";
+  // import Swiper and modules styles
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+
+  // init Swiper:
+  new Swiper(".mySwiper3", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>

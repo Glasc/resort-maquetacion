@@ -1,0 +1,14 @@
+---
+import { Icon } from "astro-icon/components";
+---
+<div class="swiper-slide">
+  <li class="px-4 pb-10 pt-2 bg-gray-100">
+    <slot />
+    <Icon
+      class="mx-auto text-green-500 mt-1"
+      title="placeholder logo"
+      size={40}
+      name="mdi:apps"
+    />
+  </li>
+</div>
