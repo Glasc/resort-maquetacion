@@ -1,0 +1,116 @@
+---
+import { Icon } from "astro-icon/components";
+import Slide from "./slide.astro";
+---
+
+<section class="px-5 sm:px-16 py-20 w-full max-w-8xl mx-auto">
+  <h2 class="font-section font-light uppercase text-center text-4xl">
+    Gourmet restaurants <span class="block mt-1 text-xl"
+      >taking you on a culinary journey</span
+    >
+  </h2>
+  <div class="swiper mySwiper w-full mt-10">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper relative flex-nowrap">
+      <Slide>
+        <Icon
+          class="mx-auto text-red-400 mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+      </Slide>
+      <Slide>
+        <Icon
+          class="mx-auto text-green-400 mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+      </Slide>
+      <Slide>
+        <Icon
+          class="mx-auto text-black mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+      </Slide>
+      <Slide>
+        <Icon
+          class="mx-auto text-gray-400 mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+      </Slide>
+      <Slide>
+        <Icon
+          class="mx-auto text-yellow-600 mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+      </Slide>
+      <Slide>
+        <Icon
+          class="mx-auto text-purple-600 mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+      </Slide>
+    </div>
+    <div class="flex justify-center gap-x-8 mt-10">
+      <button>
+        <Icon
+          class="swiper-button-prev-custom text-gray-200 hover:text-gray-500 focus:text-gray-700 transition-color duration-300"
+          size={30}
+          name="mdi:arrow-left"
+        />
+      </button>
+      <button>
+        <Icon
+          class="swiper-button-next-custom text-gray-200 hover:text-gray-500 focus:text-gray-700 transition-color duration-300"
+          size={30}
+          name="mdi:arrow-right"
+        />
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  import Swiper from "swiper/bundle";
+  // import Swiper and modules styles
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+
+  // init Swiper:
+  new Swiper(".mySwiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: false,
+    navigation: {
+      nextEl: ".swiper-button-next-custom",
+      prevEl: ".swiper-button-prev-custom",
+    },
+    breakpoints: {
+      1300: { slidesPerView: 4, spaceBetween: 30 },
+      1100: { slidesPerView: 3, spaceBetween: 20 },
+      676: { slidesPerView: 2, spaceBetween: 10 },
+      320: { slidesPerView: 1, spaceBetween: 5 },
+    },
+  });
+</script>
+
+<style>
+  .custom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+</style>
