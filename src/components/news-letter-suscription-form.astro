@@ -1,20 +1,20 @@
 ---
 import { Icon } from "astro-icon/components";
+import PrimaryButton from "./ui/PrimaryButton.astro";
 ---
 
 <section class="w-full max-w-7xl mx-auto text-center px-5 py-12">
   <div class="space-y-3">
-    <h2>Escapes begin in your inbox</h2>
+    <h2 class="section-subtitle-2 uppercase">Escapes begin in your inbox</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
   </div>
   <form
-    class="mt-20 flex flex-col sm:flex-row gap-x-5 gap-y-4 items-center sm:items-stretch justify-center"
+    class="mt-12 md:mt-20 flex flex-col sm:flex-row gap-x-5 gap-y-4 items-center sm:items-stretch justify-center"
   >
     <div class="w-full max-w-xs">
       <label
         for="name"
-        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-        >Name</label
+        class="mb-2 text-sm text-gray-900 sr-only dark:text-white">Name</label
       >
       <div class="relative">
         <div
@@ -34,8 +34,7 @@ import { Icon } from "astro-icon/components";
     <div class="w-full max-w-xs">
       <label
         for="email"
-        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
-        >Name</label
+        class="mb-2 text-sm text-gray-900 sr-only dark:text-white">Name</label
       >
       <div class="relative">
         <div
@@ -52,9 +51,6 @@ import { Icon } from "astro-icon/components";
         />
       </div>
     </div>
-    <button
-      class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 hover:border-blue-600 duration-300 focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
-      >Suscribe</button
-    >
+    <PrimaryButton>Suscribe</PrimaryButton>
   </form>
 </section>

@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import PrimaryButton from "./ui/PrimaryButton.astro";
 ---
 
 <section
@@ -9,19 +10,19 @@ import { Icon } from "astro-icon/components";
     class="xl:w-1/2 text-center space-y-8 w-full xl:max-w-8xl xl:mx-auto xl:pr-5 px-5 xl:px-0"
   >
     <div class="xl:hidden uppercase">
-      <h2 class="font-section text-5xl font-light text-balance">
+      <h2 class="section-title text-5xl font-light text-balance">
         Explore more
       </h2>
       <span class="block text-xl">with garza blanca</span>
     </div>
     <h2
-      class="hidden xl:block font-section text-5xl font-light uppercase text-balance"
+      class="hidden section-title xl:block text-5xl font-light uppercase text-balance leading-tight"
     >
       Glamour & comfort <span>that expands the imagination</span>
     </h2>
 
     <div>
-      <p class="w-full max-w-xl mx-auto m">
+      <p class="w-full max-w-xl mx-auto">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam culpa
         tenetur sunt laborum libero architecto animi dicta deleniti, ad tempora
         nulla molestiae distinctio adipisci veritatis.
@@ -34,27 +35,18 @@ import { Icon } from "astro-icon/components";
     </div>
 
     <div class="hidden xl:inline-block">
-      <h3 class="font-section uppercase text-3xl text-primary-300 font-light">
+      <h3 class="uppercase text-3xl text-primary-300 font-light">
         Three destinations your choice...
       </h3>
       <Icon
         size={30}
-        class="text-gray-300 mx-auto mt-5"
+        class="text-gray-300 mx-auto mt-7"
         name="mdi:arrow-down-drop-circle-outline"
       />
       <div class="flex justify-center gap-x-10 mt-8">
-        <a
-          class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none bg-white rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
-          >Cancun</a
-        >
-        <a
-          class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none bg-white rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
-          >Puerto vallarta</a
-        >
-        <a
-          class="py-2.5 px-5 text-sm font-medium text-blue-700 focus:outline-none bg-white rounded-lg border border-blue-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 cursor-pointer focus:ring-gray-200 uppercase"
-          >Los cabos</a
-        >
+        <PrimaryButton>Cancun</PrimaryButton>
+        <PrimaryButton>Puerto Vallarta</PrimaryButton>
+        <PrimaryButton>Los cabos</PrimaryButton>
       </div>
     </div>
   </div>
