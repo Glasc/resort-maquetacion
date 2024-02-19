@@ -2,9 +2,10 @@
 import { Icon } from "astro-icon/components";
 import siteConfig from "../../data/site-config";
 import { getImage } from "astro:assets";
+import background from "../../assets/main-background.jpg";
 
 const optimizedBackground = await getImage({
-  src: siteConfig.hero.backgroundImage.src,
+  src: background,
   format: "avif",
   width: 1920,
   height: 1080,
@@ -12,7 +13,7 @@ const optimizedBackground = await getImage({
 ---
 
 <section
-  class="hero bg-center min-h-[80vh] bg-no-repeat bg-fixed bg-gray-700/60 bg-blend-multiply"
+  class="hero bg-center min-h-[80vh] bg-no-repeat bg-fixed bg-gray-700/50 bg-blend-multiply"
   style={{
     backgroundImage: `url(${optimizedBackground.src})`,
     backgroundSize: "cover",
