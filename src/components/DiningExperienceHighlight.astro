@@ -6,8 +6,14 @@ import event1 from "@assets/events/event1.jpg";
 import event2 from "@assets/events/event2.jpg";
 ---
 
-<section class="py-12">
-  <div class="hidden my-12 lg:grid grid-cols-3 bg-primary-500 h-[60vh]">
+<section class="py-12 parent-div">
+  <div
+    class="hidden my-12 lg:grid grid-cols-3 bg-primary-500 h-[60vh] relative"
+  >
+    <div
+      class="arrow-down absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+    >
+    </div>
     <Image
       class="object-cover h-full w-full"
       src={event1}
@@ -20,7 +26,10 @@ import event2 from "@assets/events/event2.jpg";
         <h2
           class="section-title uppercase text-gray-100 font-light text-balance leading-tight"
         >
-          Exclusive <br/> <span class="section-subtitle-1 block whitespace-nowrap">Dining experiences</span>
+          Exclusive <br />
+          <span class="section-subtitle-1 block whitespace-nowrap"
+            >Dining experiences</span
+          >
         </h2>
         <Icon
           class="mx-auto text-gray-100 mt-3"
@@ -39,10 +48,10 @@ import event2 from "@assets/events/event2.jpg";
           sunt reprehenderit voluptates modi iusto laborum mollitia distinctio
           voluptatum. Eum, velit.
         </p>
-  
+
         <button
           type="button"
-          class="py-2.5 px-3 mt-4 mb-2 text-sm  text-gray-100 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:bg-primary-400 focus:z-10 focus:ring-gray-100 uppercase"
+          class="py-2.5 px-3 mt-4 mb-2 text-sm text-gray-100 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:bg-primary-400 focus:z-10 focus:ring-gray-100 uppercase"
         >
           <Icon
             class="inline-block text-gray-100 align-middle"
@@ -63,3 +72,13 @@ import event2 from "@assets/events/event2.jpg";
     />
   </div>
 </section>
+
+<style>
+  .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #01051e;
+  }
+</style>
