@@ -21,12 +21,23 @@ import Slide from "./Slide.astro";
         >
         <br /> deserve
       </h3>
-      <button
-        class="hidden lg:flex uppercase text-primary-300 mx-auto text-xl gap-x-4 items-center mt-52"
-        ><Icon size={26} name="mdi:arrow-left-thin" />
-        <span>View properties</span>
-        <Icon size={26} name="mdi:arrow-right-thin" />
-      </button>
+      <div class="flex justify-center mt-52 gap-x-8">
+        <button>
+          <Icon
+            class="swiper-button-prev-custom text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
+            size={30}
+            name="mdi:arrow-left"
+          />
+        </button>
+        <span class="text-xl uppercase text-primary-300">View properties</span>
+        <button>
+          <Icon
+            class="swiper-button-next-custom text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
+            size={30}
+            name="mdi:arrow-right"
+          />
+        </button>
+      </div>
     </div>
 
     <!-- Slider main container -->
@@ -112,6 +123,10 @@ import Slide from "./Slide.astro";
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-custom",
+      prevEl: ".swiper-button-prev-custom",
     },
   });
 </script>
