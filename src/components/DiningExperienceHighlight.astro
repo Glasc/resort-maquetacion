@@ -6,58 +6,60 @@ import event1 from "@assets/events/event1.jpg";
 import event2 from "@assets/events/event2.jpg";
 ---
 
-<section class="hidden lg:grid grid-cols-3 bg-primary-500 h-[60vh]">
-  <Image
-    class="object-cover h-full w-full"
-    src={event1}
-    alt=""
-    format="avif"
-    width={1000}
-  />
-  <div class="text-center w-full flex justify-center items-center py-6 px-4">
-    <div>
-      <h2
-        class="section-title uppercase text-gray-100 font-light text-balance leading-tight"
-      >
-        Exclusive <br/> <span class="section-subtitle-1 block whitespace-nowrap">Dining experiences</span>
-      </h2>
-      <Icon
-        class="mx-auto text-gray-100 mt-3"
-        title="placeholder logo"
-        size={90}
-        name="mdi:apps"
-      />
-      <Icon
-        class="mx-auto text-gray-100 mt-1"
-        title="placeholder logo"
-        size={90}
-        name="mdi:apps"
-      />
-      <p class="text-gray-200 text-balance max-w-lg w-full my-3 mx-auto">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
-        sunt reprehenderit voluptates modi iusto laborum mollitia distinctio
-        voluptatum. Eum, velit.
-      </p>
-
-      <button
-        type="button"
-        class="py-2.5 px-3 mt-4 mb-2 text-sm  text-gray-100 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:bg-primary-400 focus:z-10 focus:ring-gray-100 uppercase"
-      >
+<section class="py-12">
+  <div class="hidden my-12 lg:grid grid-cols-3 bg-primary-500 h-[60vh]">
+    <Image
+      class="object-cover h-full w-full"
+      src={event1}
+      alt=""
+      format="avif"
+      width={1000}
+    />
+    <div class="text-center w-full flex justify-center items-center py-6 px-4">
+      <div>
+        <h2
+          class="section-title uppercase text-gray-100 font-light text-balance leading-tight"
+        >
+          Exclusive <br/> <span class="section-subtitle-1 block whitespace-nowrap">Dining experiences</span>
+        </h2>
         <Icon
-          class="inline-block text-gray-100 align-middle"
+          class="mx-auto text-gray-100 mt-3"
           title="placeholder logo"
-          size={20}
-          name="mdi:play"
+          size={90}
+          name="mdi:apps"
         />
-        <span class="inline-block align-middle"> View video</span>
-      </button>
+        <Icon
+          class="mx-auto text-gray-100 mt-1"
+          title="placeholder logo"
+          size={90}
+          name="mdi:apps"
+        />
+        <p class="text-gray-200 text-balance max-w-lg w-full my-3 mx-auto">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+          sunt reprehenderit voluptates modi iusto laborum mollitia distinctio
+          voluptatum. Eum, velit.
+        </p>
+  
+        <button
+          type="button"
+          class="py-2.5 px-3 mt-4 mb-2 text-sm  text-gray-100 focus:outline-none bg-transparent rounded-lg border border-gray-200 hover:bg-primary-400 focus:z-10 focus:ring-gray-100 uppercase"
+        >
+          <Icon
+            class="inline-block text-gray-100 align-middle"
+            title="placeholder logo"
+            size={20}
+            name="mdi:play"
+          />
+          <span class="inline-block align-middle"> View video</span>
+        </button>
+      </div>
     </div>
+    <Image
+      class="object-cover h-full w-full"
+      src={event2}
+      alt=""
+      format="avif"
+      width={1000}
+    />
   </div>
-  <Image
-    class="object-cover h-full w-full"
-    src={event2}
-    alt=""
-    format="avif"
-    width={1000}
-  />
 </section>
