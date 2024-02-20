@@ -13,52 +13,33 @@ html {
 }
 
 .headline-1 {
-  font-size: 34px;
-  font-family: "ITC Galliard Std";
-  font-weight: 400;
+  font-size: clamp(24px, 2vw, 34px);
 }
 
-.headline-2 {
-  font-size: 24px;
-  font-family: "ITC Galliard Std";
-  font-weight: 400;
+.headline-2,
+.subtitle-1 {
+  font-size: clamp(20px, 1.5vw, 24px);
   @apply text-primary-300;
 }
 
-.subtitle-1 {
-  font-size: 24px;
-  font-family: "ITC Galliard Std";
-  font-weight: 400;
-  @apply text-primary-400;
-}
-
 .subtitle-2 {
-  font-size: 20px;
-  font-family: "ITC Galliard Std";
-  font-weight: 400;
+  font-size: clamp(16px, 1.25vw, 20px);
   @apply text-primary-400;
 }
 
-body {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+body,
+.body-2 {
   font-weight: 300;
-  font-size: 18px;
+  font-size: clamp(14px, 1.125vw, 18px);
   @apply text-primary-500;
 }
 
 .body-2 {
-  font-size: 20px;
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 300;
-  @apply text-primary-500;
+  font-size: clamp(16px, 1.25vw, 20px);
 }
 
 .caption {
-  font-size: 12px;
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: clamp(12px, 0.9vw, 12px);
   font-weight: 400;
   font-style: italic;
   @apply text-primary-500;
@@ -66,68 +47,46 @@ body {
 
 .overline-1 {
   font-weight: 600;
-  font-size: 14px;
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: clamp(12px, 1.1vw, 14px);
   @apply text-primary-500;
 }
 
 .special-title-1 {
-  font-family: "Playfair Display", sans-serif;
   font-weight: 600;
   font-size: clamp(40px, 10vw, 117px);
 }
 
 .special-title-2 {
-  font-family: "Playfair Display", sans-serif;
   font-weight: 400;
-  font-size: 44px;
+  font-size: clamp(36px, 3.5vw, 44px);
   letter-spacing: 1px;
 }
 
 .section-title {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
+  font-size: clamp(40px, 4vw, 50px);
   letter-spacing: 12px;
 }
 
 .section-subtitle-1 {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 200;
-  font-size: 34px;
+  font-size: clamp(28px, 2.7vw, 34px);
   letter-spacing: 1px;
 }
 
 .section-subtitle-2 {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 300;
-  font-size: 34px;
+  font-size: clamp(28px, 2.7vw, 34px);
   letter-spacing: 1px;
 }
 
 .title {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
-  font-size: 27px;
+  font-size: clamp(22px, 2.1vw, 27px);
 }
 
-.button-1 {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-}
-
+.button-1,
 .button-2 {
-  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: clamp(12px, 1.1vw, 14px);
 }
 
 .swiper {
