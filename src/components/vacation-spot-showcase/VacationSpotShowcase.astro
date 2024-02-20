@@ -24,7 +24,7 @@ import Slide from "./Slide.astro";
       <div class="flex justify-center mt-10 lg:mt-52 gap-x-8">
         <button>
           <Icon
-            class="swiper-button-prev-custom text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
+            class="swiper-button-prev-custom-spot-showcase text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
             size={30}
             name="mdi:arrow-left"
           />
@@ -32,7 +32,7 @@ import Slide from "./Slide.astro";
         <span class="text-xl uppercase text-primary-300">View properties</span>
         <button>
           <Icon
-            class="swiper-button-next-custom text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
+            class="swiper-button-next-custom-spot-showcase text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
             size={30}
             name="mdi:arrow-right"
           />
@@ -41,7 +41,7 @@ import Slide from "./Slide.astro";
     </div>
 
     <!-- Slider main container -->
-    <div class="swiper mySwiper w-full mt-5 lg:mt-0">
+    <div class="swiper spot-showcase-carousel w-full mt-5 lg:mt-0">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper relative flex-nowrap">
         <Slide>
@@ -104,29 +104,3 @@ import Slide from "./Slide.astro";
     </div>
   </div>
 </section>
-
-<script>
-  import Swiper from "swiper/bundle";
-  // import Swiper and modules styles
-  import "swiper/css";
-  import "swiper/css/navigation";
-  import "swiper/css/pagination";
-
-  // init Swiper:
-  new Swiper(".mySwiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    autoplay: false,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next-custom",
-      prevEl: ".swiper-button-prev-custom",
-    },
-  });
-</script>

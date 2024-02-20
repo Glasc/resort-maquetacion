@@ -16,7 +16,7 @@ import { Icon } from "astro-icon/components";
       Garza Blanca blew me away
     </h2>
   </div>
-  <div class="swiper mySwiper3 w-full mt-5 lg:mt-0">
+  <div class="swiper testimonial-carousel w-full mt-5 lg:mt-0">
     <div class="swiper-wrapper relative flex-nowrap">
       <Slide>
         <p
@@ -99,25 +99,3 @@ import { Icon } from "astro-icon/components";
     </div>
   </div>
 </section>
-
-<script>
-  import Swiper from "swiper/bundle";
-  // import Swiper and modules styles
-  import "swiper/css";
-  import "swiper/css/navigation";
-  import "swiper/css/pagination";
-
-  // init Swiper:
-  new Swiper(".mySwiper3", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    autoplay: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
