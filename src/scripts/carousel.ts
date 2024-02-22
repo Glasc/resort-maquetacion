@@ -1,11 +1,12 @@
 
 import Swiper from "swiper";
+import { Navigation, Pagination } from 'swiper/modules';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
 new Swiper(".spot-showcase-carousel", {
+  modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: true,
   slidesPerView: "auto",
@@ -22,6 +23,7 @@ new Swiper(".spot-showcase-carousel", {
 });
 
 new Swiper(".restaurant-list-carousel", {
+  modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: true,
   slidesPerView: 4,
@@ -40,6 +42,7 @@ new Swiper(".restaurant-list-carousel", {
 });
 
 new Swiper(".testimonial-carousel", {
+  modules: [Navigation, Pagination],
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
