@@ -1,6 +1,5 @@
 
-import Swiper from "swiper/bundle";
-// import Swiper and modules styles
+import Swiper from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
