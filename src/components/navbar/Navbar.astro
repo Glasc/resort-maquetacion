@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 import SecondaryButton from "../ui/SecondaryButton.astro";
 ---
 
-<nav class="flex justify-between w-full max-w-7xl mx-auto px-4 py-2">
+<nav class="grid grid-cols-3 md:flex justify-between w-full max-w-7xl mx-auto px-4 py-2">
   <div class="flex items-center space-x-3">
     <button>
       <Icon class="text-primary-400" size={35} name="mdi:hamburger-close" />
@@ -34,10 +34,10 @@ import SecondaryButton from "../ui/SecondaryButton.astro";
       src={smallLogo}
       alt="Garza Blanca logo"
       format="avif"
-      width={50}
+      width={60}
     />
   </div>
-  <div class="flex gap-x-3 sm:gap-x-4">
+  <div class="flex gap-x-3 justify-end sm:gap-x-4">
     <button>
       <Icon size={20} class="inline-block" name="mdi:person" />
       <span class="overline-1">Log in</span></button
