@@ -12,7 +12,6 @@ html {
   min-height: 100%;
 }
 
-
 .headline-1,
 .headline-2,
 .subtitle-1,
@@ -22,17 +21,17 @@ html {
 }
 
 .headline-1 {
-  font-size: clamp(24px, 2vw, 34px);
+  font-size: clamp(30px, 2vw, 34px);
 }
 
 .headline-2,
 .subtitle-1 {
-  font-size: clamp(20px, 1.5vw, 24px);
+  font-size: clamp(22px, 1.5vw, 24px);
   @apply text-primary-300;
 }
 
 .subtitle-2 {
-  font-size: clamp(16px, 1.25vw, 20px);
+  font-size: clamp(18px, 1.25vw, 20px);
   @apply text-primary-400;
 }
 
@@ -50,19 +49,24 @@ body,
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.special-title-1,
+.special-title-2 {
+  font-family: "Playfair Display", sans-serif;
+}
+
 body,
 .body-2 {
   font-weight: 300;
-  font-size: clamp(14px, 1.125vw, 18px);
+  font-size: clamp(16px, 1.125vw, 18px);
   @apply text-primary-500;
 }
 
 .body-2 {
-  font-size: clamp(16px, 1.25vw, 20px);
+  font-size: clamp(18px, 1.25vw, 20px);
 }
 
 .caption {
-  font-size: clamp(12px, 0.9vw, 12px);
+  font-size: clamp(11px, 0.9vw, 12px);
   font-weight: 400;
   font-style: italic;
   @apply text-primary-500;
@@ -70,58 +74,52 @@ body,
 
 .overline-1 {
   font-weight: 600;
-  font-size: clamp(14px, 1.1vw, 14px);
+  font-size: clamp(13px, 1.1vw, 14px);
   @apply text-primary-500;
-}
-
-.special-title-1,
-.special-title-2 {
-  font-family: "Playfair Display", sans-serif;
 }
 
 .special-title-1 {
   font-weight: 600;
-  font-size: clamp(40px, 10vw, 117px);
+  font-size: clamp(55px, 10vw, 117px);
 }
 
 .special-title-2 {
   font-weight: 400;
-  font-size: clamp(44px, 3.5vw, 44px);
+  font-size: clamp(40px, 3.5vw, 44px);
   letter-spacing: 1px;
 }
 
-.section-title,
-.section-subtitle-1,
-.section-subtitle-2,
-.title {
-  font-weight: 300;
+.section-title {
+  font-size: clamp(40px, 4vw, 50px);
+  letter-spacing: 12px;
 }
 
-.section-title {
-  font-size: clamp(28px, 4vw, 50px);
-  letter-spacing: 12px;
+@media screen and (max-width: 768px) {
+  .section-title {
+    letter-spacing: 3px;
+  }
 }
 
 .section-subtitle-1 {
   font-weight: 200;
-  font-size: clamp(19px, 2.7vw, 34px);
+  font-size: clamp(28px, 2.7vw, 34px);
   letter-spacing: 1px;
 }
 
 .section-subtitle-2 {
-  font-size: clamp(20px, 2.7vw, 34px);
+  font-size: clamp(28px, 2.7vw, 34px);
   letter-spacing: 1px;
 }
 
 .title {
   font-weight: 400;
-  font-size: clamp(16px, 2.1vw, 27px);
+  font-size: clamp(24px, 2.1vw, 27px);
 }
 
 .button-1,
 .button-2 {
   font-weight: bold;
-  font-size: clamp(10px, 1.1vw, 14px);
+  font-size: clamp(13px, 1.1vw, 14px);
 }
 
 .swiper {
