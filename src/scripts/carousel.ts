@@ -1,16 +1,18 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 new Swiper(".spot-showcase-carousel", {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Autoplay],
   direction: "horizontal",
   loop: true,
   slidesPerView: "auto",
   spaceBetween: 30,
-  autoplay: false,
+  autoplay: {
+    delay: 7000,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -26,12 +28,11 @@ new Swiper(".spot-showcase-carousel", {
 });
 
 new Swiper(".restaurant-list-carousel", {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Autoplay],
   direction: "horizontal",
   loop: true,
   slidesPerView: 4,
   spaceBetween: 30,
-  autoplay: false,
   navigation: {
     nextEl: ".swiper-button-next-custom-restaurant-list",
     prevEl: ".swiper-button-prev-custom-restaurant-list",
@@ -45,12 +46,14 @@ new Swiper(".restaurant-list-carousel", {
 });
 
 new Swiper(".testimonial-carousel", {
-  modules: [Navigation, Pagination],
+  modules: [Navigation, Pagination, Autoplay],
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
   spaceBetween: 30,
-  autoplay: true,
+  autoplay: {
+    delay: 5000
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
