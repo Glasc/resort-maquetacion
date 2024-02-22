@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
 import Slide from "./Slide.astro";
 ---
 
-<section class="w-full py-12 pl-5 md:pl-0 overflow-hidden">
+<section class="w-full py-12 pl-5 pr-5 md:pr-0 overflow-hidden">
   <div class="sm:pl-12 flex flex-col lg:flex-row gap-x-8 justify-between jos">
     <div>
       <h3
@@ -21,7 +21,9 @@ import Slide from "./Slide.astro";
         >
         <br /> deserve
       </h3>
-      <div class="flex justify-center mt-10 lg:mt-52 gap-x-8">
+      <div
+        class="center hidden md:flex justify-center md:mt-5 lg:mt-52 gap-x-8"
+      >
         <button>
           <Icon
             class="swiper-button-prev-custom-spot-showcase text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
@@ -29,7 +31,9 @@ import Slide from "./Slide.astro";
             name="mdi:arrow-left"
           />
         </button>
-        <span class="text-xl uppercase text-primary-300">View properties</span>
+        <span class="text-xl uppercase text-primary-300 my-3"
+          >View properties</span
+        >
         <button>
           <Icon
             class="swiper-button-next-custom-spot-showcase text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
@@ -95,12 +99,9 @@ import Slide from "./Slide.astro";
           />
         </Slide>
       </div>
-    </div>
-  </div>
-
-  <div>
-    <div class="relative flex sm:hidden mt-10">
-      <div class="swiper-pagination"></div>
+      <div class="mt-10 md:hidden">
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </div>
 </section>

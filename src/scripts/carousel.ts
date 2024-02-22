@@ -1,6 +1,5 @@
-
 import Swiper from "swiper";
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -19,6 +18,10 @@ new Swiper(".spot-showcase-carousel", {
   navigation: {
     nextEl: ".swiper-button-next-custom-spot-showcase",
     prevEl: ".swiper-button-prev-custom-spot-showcase",
+  },
+  breakpoints: {
+    1300: { slidesPerView: "auto" },
+    768: { slidesPerView: 1 },
   },
 });
 
