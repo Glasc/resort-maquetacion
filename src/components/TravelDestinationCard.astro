@@ -4,10 +4,12 @@ import PrimaryButton from "./ui/PrimaryButton.astro";
 ---
 
 <section
-  class="xl:flex flex-row-reverse items-center gap-x-16 mt-12 py-12 bg-primary-100 xl:bg-white"
+  class="xl:flex flex-row-reverse items-center gap-x-6 mt-12 py-12 bg-primary-100 xl:bg-white overflow-hidden"
 >
   <div
-    class="xl:w-1/2 text-center space-y-8 w-full xl:max-w-8xl xl:mx-auto xl:pr-5 px-5 xl:px-0"
+    class="xl:w-1/2 text-center space-y-8 w-full xl:max-w-8xl xl:mx-auto xl:pr-5 px-5 xl:px-0 jos"
+    data-jos_animation="fade-left"
+
   >
     <div class="xl:hidden uppercase">
       <h2 class="section-title text-5xl font-light text-balance">
@@ -51,7 +53,8 @@ import PrimaryButton from "./ui/PrimaryButton.astro";
     </div>
   </div>
   <video
-    class="xl:w-1/2 mt-6 xl:mt-6 w-full max-w-3xl xl:max-w-8xl mx-auto xl:pl-5 px-5 xl:px-0 aspect-video"
+    class="xl:w-1/2 mt-6 xl:mt-6 w-full max-w-3xl xl:max-w-8xl mx-auto xl:pl-5 px-5 xl:px-0 aspect-video jos"
+    data-jos_animation="fade-right"
     controls
     muted
   >

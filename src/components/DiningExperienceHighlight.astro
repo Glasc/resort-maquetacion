@@ -6,7 +6,7 @@ import event1 from "@assets/events/event1.jpg";
 import event2 from "@assets/events/event2.jpg";
 ---
 
-<section class="py-12 parent-div">
+<section class="py-12 parent-div overflow-hidden">
   <div
     class="hidden my-12 lg:grid grid-cols-3 bg-primary-500 h-[60vh] relative"
   >
@@ -16,7 +16,8 @@ import event2 from "@assets/events/event2.jpg";
     </div>
     <Image
       loading="lazy"
-      class="object-cover h-full w-full"
+      class="object-cover h-full w-full jos"
+      data-jos_animation="fade-right"
       src={event1}
       alt=""
       format="avif"
@@ -64,7 +65,8 @@ import event2 from "@assets/events/event2.jpg";
     </div>
     <Image
       loading="lazy"
-      class="object-cover h-full w-full"
+      class="object-cover h-full w-full jos"
+      data-jos_animation="fade-left"
       src={event2}
       alt=""
       format="avif"

@@ -16,6 +16,7 @@
     "@iconify-json/mdi": "^1.1.64",
     "astro": "^4.4.1",
     "astro-icon": "^1.1.0",
+    "jos-animation": "^0.9.2",
     "sharp": "^0.33.2",
     "swiper": "^11.0.6",
     "tailwindcss": "^3.4.1",
