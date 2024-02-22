@@ -2,12 +2,12 @@ import Swiper from "swiper";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import 'swiper/css/pagination';
 
 new Swiper(".spot-showcase-carousel", {
   modules: [Navigation, Pagination, Autoplay],
   direction: "horizontal",
   loop: true,
-  slidesPerView: "auto",
   spaceBetween: 30,
   autoplay: {
     delay: 7000,
@@ -21,8 +21,10 @@ new Swiper(".spot-showcase-carousel", {
     prevEl: ".swiper-button-prev-custom-spot-showcase",
   },
   breakpoints: {
-    1300: { slidesPerView: "auto" },
-    768: { slidesPerView: 1 },
+    1500: { slidesPerView: 3 },
+    1050: { slidesPerView: 2 },
+    600: { slidesPerView: 2 },
+    0: { slidesPerView: 1 },
   },
 });
 
@@ -51,7 +53,7 @@ new Swiper(".testimonial-carousel", {
   slidesPerView: 1,
   spaceBetween: 30,
   autoplay: {
-    delay: 5000
+    delay: 5000,
   },
   pagination: {
     el: ".swiper-pagination",

@@ -9,7 +9,7 @@ import { Image } from "astro:assets";
 import Slide from "./Slide.astro";
 ---
 
-<section class="w-full py-12 pl-5 pr-5 md:pr-0 overflow-hidden">
+<section class="w-full py-12 pl-5 pr-5 lg:pr-0 overflow-hidden">
   <div class="sm:pl-12 flex flex-col lg:flex-row gap-x-8 justify-between jos">
     <div>
       <h3
@@ -21,9 +21,8 @@ import Slide from "./Slide.astro";
         >
         <br /> deserve
       </h3>
-      <div
-        class="center hidden md:flex justify-center md:mt-5 lg:mt-52 gap-x-8"
-      >
+
+      <div class="hidden md:flex justify-center md:mt-5 lg:mt-52 gap-x-8">
         <button>
           <Icon
             class="swiper-button-prev-custom-spot-showcase text-primary-300 hover:text-primary-400 focus:text-primary-500 transition-color duration-300"
@@ -47,56 +46,66 @@ import Slide from "./Slide.astro";
     <!-- Slider main container -->
     <div class="swiper spot-showcase-carousel w-full mt-5 lg:mt-0">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper relative flex-nowrap">
+      <div class="swiper-wrapper relative flex-nowrap" id="lightgallery">
         <Slide>
-          <Image
-            loading="eager"
-            src={carousel1}
-            alt="vacation spot"
-            class="aspect-[16/13] object-cover"
-            format="avif"
-            width={700}
-          />
+          <div class="item cursor-pointer" data-src={carousel1.src}>
+            <Image
+              loading="eager"
+              src={carousel1}
+              alt="vacation spot"
+              class="aspect-[16/13] object-cover"
+              format="avif"
+              width={700}
+            />
+          </div>
         </Slide>
         <Slide>
-          <Image
-            loading="eager"
-            src={carousel2}
-            alt="vacation spot"
-            class="aspect-[16/13] object-cover"
-            format="avif"
-            width={700}
-          />
+          <div class="item cursor-pointer" data-src={carousel2.src}>
+            <Image
+              loading="eager"
+              src={carousel2}
+              alt="vacation spot"
+              class="aspect-[16/13] object-cover"
+              format="avif"
+              width={700}
+            />
+          </div>
         </Slide>
         <Slide>
-          <Image
-            loading="lazy"
-            src={carousel3}
-            alt="vacation spot"
-            class="aspect-[16/13] object-cover"
-            format="avif"
-            width={700}
-          />
+          <div class="item cursor-pointer" data-src={carousel3.src}>
+            <Image
+              loading="lazy"
+              src={carousel3}
+              alt="vacation spot"
+              class="aspect-[16/13] object-cover"
+              format="avif"
+              width={700}
+            />
+          </div>
         </Slide>
         <Slide>
-          <Image
-            loading="lazy"
-            src={carousel4}
-            alt="vacation spot"
-            class="aspect-[16/13] object-cover"
-            format="avif"
-            width={700}
-          />
+          <div class="item cursor-pointer" data-src={carousel4.src}>
+            <Image
+              loading="lazy"
+              src={carousel4}
+              alt="vacation spot"
+              class="aspect-[16/13] object-cover"
+              format="avif"
+              width={700}
+            />
+          </div>
         </Slide>
         <Slide>
-          <Image
-            loading="lazy"
-            src={carousel5}
-            alt="vacation spot"
-            class="aspect-[16/13] object-cover"
-            format="avif"
-            width={700}
-          />
+          <div class="item cursor-pointer" data-src={carousel5.src}>
+            <Image
+              loading="lazy"
+              src={carousel5}
+              alt="vacation spot"
+              class="aspect-[16/13] object-cover"
+              format="avif"
+              width={700}
+            />
+          </div>
         </Slide>
       </div>
       <div class="mt-10 md:hidden">

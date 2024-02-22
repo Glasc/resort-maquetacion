@@ -22,6 +22,9 @@ dependencies:
   jos-animation:
     specifier: ^0.9.2
     version: 0.9.2
+  lightgallery:
+    specifier: ^2.7.2
+    version: 2.7.2
   sharp:
     specifier: ^0.33.2
     version: 0.33.2
@@ -2595,6 +2598,11 @@ packages:
 
   /kolorist@1.8.0:
     resolution: {integrity: sha512-Y+60/zizpJ3HRH8DCss+q95yr6145JXZo46OTpFvDZWLfRCE4qChOyk1b26nMaNpfHHgxagk9dXT5OP0Tfe+dQ==}
+    dev: false
+
+  /lightgallery@2.7.2:
+    resolution: {integrity: sha512-Ewdcg9UPDqV0HGZeD7wNE4uYejwH2u0fMo5VAr6GHzlPYlhItJvjhLTR0cL0V1HjhMsH39PAom9iv69ewitLWw==}
+    engines: {node: '>=6.0.0'}
     dev: false
 
   /lilconfig@2.1.0:
