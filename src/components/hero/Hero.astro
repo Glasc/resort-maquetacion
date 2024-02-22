@@ -12,9 +12,9 @@ const optimizedBackground = await getImage({
 ---
 
 <section
-  class="hero bg-center min-h-[82vh] bg-no-repeat bg-fixed bg-gray-700/50 bg-blend-multiply"
+  class="hero bg-center min-h-[82vh] bg-no-repeat bg-fixed bg-blend-multiply"
   style={{
-    backgroundImage: `url(${optimizedBackground.src})`,
+    backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url(${optimizedBackground.src})`,
     backgroundSize: "cover",
   }}
 >
@@ -28,9 +28,7 @@ const optimizedBackground = await getImage({
         Garza Blanca Resorts
       </h1>
 
-      <h2
-        class="text-xl tracking-tight leading-none text-white"
-      >
+      <h2 class="text-xl tracking-tight leading-none text-white">
         BY TAFER HOTELS & RESORTS
       </h2>
 
@@ -41,3 +39,13 @@ const optimizedBackground = await getImage({
     </div>
   </div>
 </section>
+
+<style>
+  .hero {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+</style>
